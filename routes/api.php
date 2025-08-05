@@ -8,4 +8,4 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::post('/send-report', [ReportController::class, 'sendToTelegram']);
+Route::post('/send-report', [ReportController::class, 'sendToTelegram'])->name('sendReport');

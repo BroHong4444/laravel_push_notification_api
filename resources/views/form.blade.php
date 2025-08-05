@@ -10,7 +10,7 @@
 
 <body>
     <div class="w-full flex justify-center items-center h-[100vh]">
-        <form action="form-submit" method="POST"
+        <form action="{{ route('sendReport') }}" method="POST"
             class="w-full max-w-5xl mx-auto p-6 bg-white shadow-lg rounded-2xl space-y-6 border border-blue-500">
             @csrf
             <h2 class="text-2xl font-semibold text-blue-500 text-center">Send Report</h2>
