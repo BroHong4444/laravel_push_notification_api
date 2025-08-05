@@ -22,7 +22,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://ah-toch-store-laravel.vercel.app",
+        "APP_URL": "https://send-report.vercel.app",
         "APP_KEY": "base64:98iGqIB6tdpnyjQ/LUkMdApR+bjGGuUZRjPB7+oP8vU=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
@@ -37,25 +37,5 @@
         "CLOUDFLARE_D1_DATABASE_ID": "your-database-id",
         "CLOUDFLARE_TOKEN": "your-cloudflare-token",
         "CLOUDFLARE_ACCOUNT_ID": "your-account-id"
-    },
-
-    "headers": [
-        {
-            "source": "/api/(.*)",
-            "headers": [
-                {
-                    "key": "Access-Control-Allow-Origin",
-                    "value": "https://send-report.vercel.app"
-                },
-                {
-                    "key": "Access-Control-Allow-Methods",
-                    "value": "GET,POST,PUT,DELETE,OPTIONS"
-                },
-                {
-                    "key": "Access-Control-Allow-Headers",
-                    "value": "Content-Type, Authorization"
-                }
-            ]
-        }
-    ]
+    }
 }
