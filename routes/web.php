@@ -18,13 +18,8 @@ use Illuminate\Support\Facades\Notification as FacadesNotification;
 |
 */
 
-// Route::get('/', function () {
-//     return view('form');
-// });
+Route::get('/', function () {
+    return view('form');
+});
 
 // Route::post('/send-report', [ReportController::class, 'sendToTelegram']);
-
-// Route::get('/show-notify', function () {
-//     event(new NotifyProcessed(request()->all()));
-//     return view('welcome');
-// });
