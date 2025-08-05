@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,6 @@
             @csrf
             <h2 class="text-2xl font-semibold text-blue-500 text-center">Send Report</h2>
             <div class="flex flex-col md:flex-row gap-4">
-                <!-- Left Column -->
                 <div class="w-full md:w-1/2 space-y-4">
                     <div>
                         <label for="name" class="block mb-1 font-medium text-gray-700">
@@ -45,7 +44,6 @@
                         </button>
                     </div>
                 </div>
-                <!-- Right Column -->
                 <div class="w-full">
                     <label for="message" class="block mb-1 font-medium text-gray-700">
                         Description
@@ -65,4 +63,4 @@
     </div>
 </body>
 
-</html>
+</html> --}}
