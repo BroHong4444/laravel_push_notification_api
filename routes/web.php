@@ -22,4 +22,4 @@ Route::get('/', function () {
     return view('form');
 });
 
-// Route::post('/send-report', [ReportController::class, 'sendToTelegram']);
+Route::post('/send-report', [ReportController::class, 'sendToTelegram'])->name('sendReport');
