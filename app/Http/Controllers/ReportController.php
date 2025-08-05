@@ -24,7 +24,7 @@ class ReportController extends Controller
             Notification::route('telegram', $chatId) // your Telegram chat ID
                 ->notify(new TelegramNotification($validated));
 
-            return response()->json(['success' => true, 'message' => 'Report sent successfully.']);
+            return response()->json(['success' => true, 'message' => 'Report sent successfully.'], 200);
         } catch (\Throwable $ex) {
             Log::error('Telegram notification failed', [
                 'error' => $ex->getMessage(),
