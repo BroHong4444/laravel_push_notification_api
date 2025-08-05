@@ -6,6 +6,7 @@ use App\Events\NotifyProcessed;
 use App\Http\Controllers\ReportController;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\Notification as FacadesNotification;
+use Illuminate\Support\Facades\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,11 @@ use Illuminate\Support\Facades\Notification as FacadesNotification;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/token', function (Request $request) {
+    $token = $request->session()->token();
+    $token = csrf_token();
+});
 
 Route::get('/', function () {
     return view('form');

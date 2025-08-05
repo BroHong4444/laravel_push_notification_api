@@ -8,4 +8,9 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
+Route::get('/token', function (Request $request) {
+    $token = $request->session()->token();
+    $token = csrf_token();
+});
+
 Route::post('/send-report', [ReportController::class, 'sendToTelegram'])->name('sendReport');
