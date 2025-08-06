@@ -19,13 +19,8 @@ use Illuminate\Support\Facades\Request;
 |
 */
 
-Route::get('/token', function (Request $request) {
-    $token = $request->session()->token();
-    $token = csrf_token();
-});
-
 Route::get('/', function () {
-    return view('form');
+    return view('welcome');
 });
 
-Route::post('/send-report', [ReportController::class, 'sendToTelegram'])->name('sendReport');
+// Route::post('/send-report', [ReportController::class, 'sendToTelegram'])->name('sendReport');
