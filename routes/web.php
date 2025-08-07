@@ -22,5 +22,9 @@ use Illuminate\Support\Facades\Request;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/hello-laravel', function () {
+    return response()->json(['message' => "hello laravel app"]);
+});
+
 
 // Route::post('/send-report', [ReportController::class, 'sendToTelegram'])->name('sendReport');
