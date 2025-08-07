@@ -9,6 +9,15 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::post('/send-report', [ReportController::class, 'sendToTelegram']);
+
 Route::get('/hello-laravel', function () {
     return response()->json(['message' => "hello laravel app"]);
+});
+
+Route::post('/test-post', function (Request $request) {
+    return response()->json([
+        'success' => true,
+        'message' => 'POST request received!',
+        'data' => $request->all()
+    ]);
 });
